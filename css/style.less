@@ -1,0 +1,292 @@
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    font-family: 'Raleway', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-image: url('../img/backgrounds/cozy-restaurant.jpg');
+    backdrop-filter: blur(5px);
+}
+
+#main {
+    width: 60%;
+    height: fit-content;
+    background-color: #ea9d83b1;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main-logo {
+    margin-top: 5%;
+    width: 15vw;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 30px;
+    width: 100%;
+    #tel-info {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#carousel-fotos-bar {
+    width: 100%;
+    height: 30vw;
+    padding-top: 5%;
+}
+
+.carousel-fotos {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-foto {
+    height: 100%;
+    background-size: 100%;
+}
+
+#carousel-foto-1 {
+    background-image: url('../img/carousel-1.jpg');
+}
+#carousel-foto-2 {
+    background-image: url('../img/carousel-2.jpg');
+}
+#carousel-foto-3 {
+    background-image: url('../img/carousel-3.jpg');
+}
+
+.texto-centrado {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        width: 40%;
+        text-align: center;
+    }
+}
+
+#espacio-carta {
+    // transition: .5s;
+    display: flex;
+    height: 30vw;
+    width: 100%;
+    padding-top: 5%;
+    justify-content: center;
+    align-items: center;
+    
+
+    #background-carta {
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/backgrounds/logo-background-dark.png');
+        background-size: cover;  
+        background-position: center;
+        transition: 0.5s;
+    }
+    #link-carta {
+        position: absolute;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0);
+        transition: .5s;
+        font-size: 30px;
+
+    }
+    #link-carta:hover {
+        text-decoration: underline;
+    }
+}
+
+#fade {
+    margin-top: 5%;
+    display: flex;
+    height: 15vw;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    #fade-image {
+        height: 100%;
+        width: 75%;
+        background-image: url('../img/backgrounds/logo-background.png');
+        background-size: cover;
+        background-position: center;
+        -webkit-mask-image:-webkit-gradient(linear, left bottom, right bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+
+    p {
+        text-align: right;
+        margin-right: 5%;
+        font-size: 1.5vw;
+        margin-bottom: 0%;
+    }
+
+    #fade-horario-titulo {
+        font-size: 30px;
+        text-decoration: underline;
+    }
+}
+
+#mapa {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    #mapa-titulo {
+        font-size: 30px;
+        height: fit-content;
+        padding: 0%;
+    }
+
+    #mapa-widget {
+        width: 100%;
+        padding: 0%;
+        #mapa-widget-content {
+            width: 100%;
+        }
+    }
+}
+
+#platos-destacados {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+    align-items: flex-start;
+
+    #destacados-titulo {
+        font-size: 30px;
+    }
+
+    #destacados-platos {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+
+        .fila-destacados {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-wrap: nowrap;
+            .plato {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgba(255, 255, 255, 0);
+                width: 33.33333%;
+                height: 100%;
+                .background-plato {
+                    background-size: 100%;
+                    width: 100%;
+                    height: 100%;
+                    transition: .5s;
+                    background-position: center;
+                }
+                .nombre-plato {
+                    transition: .5s;
+                    filter: none;
+                    position: absolute;
+                    font-size: 20px;
+                }
+                .nombre-plato:hover {
+                    cursor: default;
+                }
+            }
+            #background-plato-1 {
+                background-image: url('../img/platos/plato-1.PNG');
+            }
+            #background-plato-2 {
+                background-image: url('../img/platos/plato-2.PNG');
+            }
+            #background-plato-3 {
+                background-image: url('../img/platos/plato-3.PNG');
+            }
+            #background-plato-4 {
+                background-image: url('../img/platos/plato-4.PNG');
+            }
+            #background-plato-5 {
+                background-image: url('../img/platos/plato-5.PNG');
+            }
+            #background-plato-6 {
+                background-image: url('../img/platos/plato-6.PNG');
+            }
+        }
+    }
+}
+
+p:hover {
+    cursor:default;
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+      width: 100vw;
+    }
+
+    #main-logo {
+        width: 30vw;
+    }
+
+    #carousel-fotos-bar {
+        height: 50vw;
+    }
+
+    .texto-centrado{
+        p {
+            width: 60%;
+        }
+    }
+
+    #espacio-carta {
+        height: 50vw;
+    }
+
+    #fade {
+        height: 20vw;
+        p {
+            font-size: 10px;
+        }
+    }
+
+    #platos-destacados {
+        #destacados-platos {
+            
+            .fila-destacados {
+                flex-wrap: wrap;
+                height: 120%;
+                .plato {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+  }
